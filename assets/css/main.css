@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-image: url('../img/bcg.jpg') !important;
+    height: 100% !important;
+    background-size: cover;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif
+
+}
+.btn-primary,.bg-primary{
+    background-color: #598cb4 !important;
+    border-color: #598cb4 !important;
+}
+.logo{
+    width: 100px;
+}
+.box-shadow{
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
+}
+.card{
+    width: 50% !important;
+}
+.topo{
+    margin-top: 100px;
+}
+.card-prices{
+    width: 100% !important;
+}
+.display-4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.video{
+    width: 100% !important;
+    height: 420px !important;
+}
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.texto-home{
+    font-size: 2.05rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size-adjust: inherit;
+}
+.px-auto{
+    margin: auto !important;
+}
+.btn-fb{
+    background-color: #4267B2 !important;
+    border-color: #4267B2 !important;
+    color: #ffffff !important;
+}
+.px-6{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.px-7{
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+}
+#menu-lateral {
+    width: 15%;
+    margin: 0; padding: 0;
+    margin-left: 2rem;
+    float: left;
+    border: #000000;
+    box-sizing: border-box;
+}
+#menu-lateral ul li {
+    margin: 0; padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+}
+.topo-dash{
+    margin-top: 60px;
+}
+.userImg{
+    max-width: 75px;
+}
+.imgCard{
+    max-width: 100%;
+}
