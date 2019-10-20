@@ -16,7 +16,7 @@ body {
   transition: margin .25s ease-out;
   float: left;
   margin-top: auto;
-  
+  position: fixed;
 }
 
 #sidebar-wrapper .sidebar-heading {

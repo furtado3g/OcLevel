@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/simple-sidebar.css">
     <title>OcLevel</title>
@@ -45,23 +46,36 @@
     <div class="container topo-dash">
         <div class="row py-5 ">
             <div class="col-md-2"></div>
-            <div class="col-md-5">
+            <div class="col-md-10">
                 <div class="card card-prices box-shadow">
                     <div class="card-header text-center text-light bg-primary">
-                        Minha regiao
+                        Historico de pagamento
                     </div>
                     <div class="card-body p-0">
-                            <img src="../assets/img/regiao.png" alt="" class="imgCard">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card card-prices box-shadow">
-                    <div class="card-header text-center text-light bg-primary">
-                        Pais
-                    </div>
-                    <div class="card-body p-0">
-                        <img src="../assets/img/brasil.png" alt="" class="imgCard">
+                        <div class="row">
+                            <div class="col-md-12 p-5">
+                                <table class="table table-bordered table-striped" id="table">
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Referencia</th>
+                                            <th data-sortable="true">Valor da fatura</th>
+                                            <th data-sortable="true">Plano</th>
+                                            <th data-sortable="true">Opcoes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2019</td>
+                                            <td>R$360,00</td>
+                                            <td>Anual</td>
+                                            <td class='text-center'>
+                                                <button class="btn btn-primary">Vizualizar Fatura</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,6 +86,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="../assets/js/asyncs.js"></script>    
 </body>
 </html>

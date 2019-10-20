@@ -40,28 +40,18 @@
             <a href="./statisctics.html" class="list-group-item list-group-item-action bg-light">Estatisticas</a>
             <a href="./dash.html" class="list-group-item list-group-item-action bg-light">Minha regiao</a>
             <a href="./minhasBoias.html" class="list-group-item list-group-item-action bg-light">Minhas boias</a>
-        </div>
+        </div> 
     </div>
     <div class="container topo-dash">
-        <div class="row py-5 ">
+        <div class="row py-3 ">
             <div class="col-md-2"></div>
-            <div class="col-md-5">
+            <div class="col-md-10">
                 <div class="card card-prices box-shadow">
                     <div class="card-header text-center text-light bg-primary">
-                        Minha regiao
+                        Estatisticas do nivel do mar
                     </div>
-                    <div class="card-body p-0">
-                            <img src="../assets/img/regiao.png" alt="" class="imgCard">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card card-prices box-shadow">
-                    <div class="card-header text-center text-light bg-primary">
-                        Pais
-                    </div>
-                    <div class="card-body p-0">
-                        <img src="../assets/img/brasil.png" alt="" class="imgCard">
+                    <div class="card-body p-0 text-center">
+                        <canvas id="primeiroGrafico"></canvas>
                     </div>
                 </div>
             </div>
@@ -71,7 +61,24 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+        let primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
+        let chart = new Chart(primeiroGrafico, {
+            type : "line",
+            data: {
+                labels: ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'set', 'out', 'nov', 'dez'],
+                            
+                datasets: [
+                    {
+                        label: 'nivel do mar/Ano',
+                        data: [3, 3.5, 3.75, 4, 3.75, 4,4.1,4,4.2,3.9,4,4.5]
+                    }
+                ]
+            }
+        });
+    </script>
     <script src="../assets/js/asyncs.js"></script>    
 </body>
 </html>
